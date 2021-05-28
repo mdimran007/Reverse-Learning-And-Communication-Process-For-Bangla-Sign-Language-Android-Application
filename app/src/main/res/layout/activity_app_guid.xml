@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppGuid">
+
+    /*Main Header start*/
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2B7E2F"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:onClick="backAction"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="অ্যাপ গাইড"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:gravity="left"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b1a8a8"></LinearLayout>
+    /*Main Header end*/
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:text="অ্যাপ সম্পর্কে :"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="viewStart"
+                android:text="এই অ্যাপটির  মাধ্যমে বাংলা প্রাকৃতিক ভাষাকে সাইন ভাষায় রুপান্তর করা হয়। এটি সাধারনত বাকপ্রতিবন্ধী মানুষকে সাধারণ মানুষের ভাষা বুঝতে সাহায্য করে। এছাড়াও এখান থেকে আমরা সাইন ভাষা শিখতে পারবো।
+\n\nবর্তমানে অ্যাপটির ভার্সন নাম্বার ০.১ । অ্যাপটি টেস্টিং এর জন্য পাবলিস্ট করা হয়েছে। অ্যাপটিতে ডাটা কালেকশন এর কাজ চলছে। পরবর্তীতে  ফাইনাল ভার্শন  পাবলিস্ট করা হবে।
+"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:text="অ্যাপটি ব্যবহার করার নিয়ম :"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="প্রথমে আপনার ফোনের ইন্টারনেট কানেকশন ওপেন আছে কিনা নিশ্চিত হয়ে নিন। এরপরে  মূল অ্যাপে প্রবেশ করুন বাটনটিতে ক্লিক দিন।  যে অ্যাক্টিভিটি আসবে সেখান থেকে মাইক আইকনে ক্লিক দিন। এরপর যা বলতে চান সেটি বলুন। আপনার বলা শেষ হলে, অ্যাপটি অটোমেটিকলি আপনার ভয়েস থেকে সাইন ভাষায় রুপান্তর করে এনিমেশন করবে।"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

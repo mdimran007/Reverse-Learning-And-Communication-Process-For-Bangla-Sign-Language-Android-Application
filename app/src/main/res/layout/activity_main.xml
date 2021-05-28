@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    /*Main Header start*/
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2B7E2F"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:onClick="backAction"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="বাংলা প্রাকৃতিক ভাষা থেকে সাইন ভাষা"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:gravity="left"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b1a8a8"></LinearLayout>
+    /*Main Header end*/
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:gravity="center"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+
+
+
+        <EditText
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint=""
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/btnSpeak"
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:onClick="getSpeechInput"
+            android:src="@drawable/ic_mic"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/transBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Reverse"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_bg"
+        />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="290dp"
+    android:background="@drawable/output_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="30dp"
+    >
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgView"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="290dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:visibility="invisible"-->
+<!--        />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgView"
+        android:layout_width="290dp"
+        android:layout_height="280dp"
+        android:src="@drawable/hello1"
+        android:visibility="visible"
+        />
+
+
+</LinearLayout>
+
+
+<!--<TextView-->
+<!--    android:id="@+id/testtext"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Hi"-->
+<!--    />-->
+
+</LinearLayout>
+
+</LinearLayout>
